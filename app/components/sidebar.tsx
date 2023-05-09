@@ -121,12 +121,13 @@ export function SideBar(props: { className?: string }) {
           shadow
         />
         <IconButton
-          icon={<PluginIcon />}
-          text={shouldNarrow ? undefined : Locale.Plugin.Name}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => showToast(Locale.WIP)}
-          shadow
-        />
+    icon={<PluginIcon />}
+    text={shouldNarrow ? undefined : "资源官网"}
+    className={styles["sidebar-bar-button"]}
+    shadow
+    onClick={() => window.location.href = 'https://www.ksyll.com'}
+/>
+
       </div>
 
       <div
