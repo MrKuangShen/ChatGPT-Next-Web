@@ -121,12 +121,20 @@ export function SideBar(props: { className?: string }) {
           shadow
         />
         <IconButton
-    icon={<PluginIcon />}
+    icon={<MaskIcon />}
     text={shouldNarrow ? undefined : "资源官网"}
     className={styles["sidebar-bar-button"]}
     shadow
-    onClick={() => window.location.href = 'https://www.ksyll.com'}
+    onClick={() => window.open('https://www.ksyll.com', '_blank')}
 />
+<IconButton
+    icon={<MaskIcon />}
+    text={shouldNarrow ? undefined : "购买key"}
+    className={styles["sidebar-bar-button"]}
+    shadow
+    onClick={() => window.open('http://wpa.qq.com/msgrd?v=3&uin=1527537492&site=qq&menu=yes', '_blank')}
+/>
+
 
       </div>
 
